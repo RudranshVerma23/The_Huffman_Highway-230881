@@ -1,0 +1,7 @@
+int arr[5]={2,8,18,34,5};
+for (int i=0;i<5;i++){
+cout<<i[arr]<<" ";
+}
+If you run this code, it prints out all values of the array seperated by space.
+This is because the expression x[y] is read by the compiler as *(x+y).
+So it doesn't matter if you use x[y] or y[x], it will compile and gives out the expected result.

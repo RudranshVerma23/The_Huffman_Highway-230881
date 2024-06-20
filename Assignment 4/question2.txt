@@ -1,0 +1,14 @@
+int arr[5]={2,8,18,34,5};
+char ch[6]= "abcde";
+cout<<arr<<endl;
+cout<<ch;
+
+This shows the basic difference in using an integer array and a character array.
+If you run this code, the first line gives the address to the first of element of the array,
+while the second prints the character array in a sequence like a string of characters.
+
+This is because for character array,
+cout interprets character arrays as a string terminating with null character "\0",
+and that's why while initializing the character array of 5 characters,
+the code requires 6 spaces (the last being the null character).
+And for the rest of the types of arrays (like for int) it interprets as the address to the first element of the array.
